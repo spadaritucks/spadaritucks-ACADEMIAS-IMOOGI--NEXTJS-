@@ -1,0 +1,147 @@
+/* Estilização da navbar */
+
+.nav-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #0a0a0a;
+    width:100%;
+    height: 70px;
+    color: white;
+    gap: 10px;
+}
+
+
+.logo-title-click div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.logo-title-click div h2{
+    font-size: 22px;
+    color: white;
+    font-weight: 700;
+    margin-top: 7px;
+}
+
+.logo-title-click a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-button{
+    z-index: 2000;
+}
+
+.menu-button img{
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    
+}
+
+.menu-button img:hover{
+    transform: scale(1.2);
+}
+
+.nav-links{
+    position: absolute;
+    right: -200px;
+    opacity: 0;
+    width: 200px;
+    height: 400px;
+    top: 70px;
+    background-color:#FA8232;
+    color: black;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    z-index: 1000;
+    border-bottom-left-radius: 20px;
+    gap: 10px;
+    transition: 0.3s ease-in-out;
+    margin: 0;
+}
+
+.authenticated-nav-links{
+    position: absolute;
+    left: -300px;
+    top: 70px;
+    width: 300px;
+    height: 140vh;
+    background-color:#FA8232;
+    color: black;
+    z-index: 1000;
+    border-bottom-right-radius: 20px;
+    gap: 10px;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+ 
+}
+
+
+.nav-links.open{
+    right:0;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+
+}
+
+.authenticated-nav-links.open{
+    left:0;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-links a{
+    color:black;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: 400;
+    margin: 6px;
+    border-top-right-radius:20px;
+    border-bottom-right-radius: 20px;
+    margin: 6px;
+    width: 98%;
+    height: 50px;
+    text-align: right;
+    cursor: pointer;
+
+    
+
+}
+
+.authenticated-nav-links a , .logout{
+    color:black;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: 400;
+    margin: 6px;
+    width: 98%;
+    height: 50px;
+    padding: 2px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+}
+
+
+.nav-links a:hover{
+    background-color: #0a0a0a;
+    color: white;
+}
+
+.authenticated-nav-links a:hover, .logout:hover{
+    background-color: #0a0a0a;
+    color: white;
+}
+
+

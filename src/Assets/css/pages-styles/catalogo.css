@@ -1,0 +1,75 @@
+
+
+.catalogo-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-catalogo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.plano{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 350px;
+    box-shadow: 4px 4px 4px 4px #ccc;
+    margin: 20px;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.plano-title{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.number-modalidades{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.month-value{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.total-value{
+    font-size: 8px;
+}
+
+.purchase-btn{
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.purchase-btn:hover{
+    background-color: blue;
+}
+
+
+@media (max-width:990px){
+    .container-catalogo{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:500px){
+    .container-catalogo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

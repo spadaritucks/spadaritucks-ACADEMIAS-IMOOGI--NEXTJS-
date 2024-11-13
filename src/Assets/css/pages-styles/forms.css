@@ -1,0 +1,171 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.area-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+    box-shadow: 6px 6px 6px 6px #ccc;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.crud-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.crud-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center; 
+}
+
+.form-component {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center; 
+
+}
+
+.form-component-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-name-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.insertMoreOne{
+    background-color: #007BFF;
+    border-radius: 4px;
+    border: none;
+    margin-top: 4px;
+    padding: 0 10px;
+    color: white;
+    max-width: 300px;
+}
+
+.insertMoreOne:hover{
+    background-color: blue;
+}
+
+.form-name-input input,
+.form-name-input select {
+    width: 225px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    border: 0.5px solid #ccc;
+
+}
+
+input:disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+button:disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.error-message{
+    color: red;
+    transition: 0.2s ease-in;
+}
+
+.form-name-input.flex{
+    display: flex;
+}
+
+.form-name-input.disabled, .form-name-input.none{
+    display: none ;
+    visibility: hidden;
+    position: absolute;
+}
+
+
+.submit-button {
+    margin-top: 16px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.submit-button:hover{
+    background-color: blue;
+}
+
+.grid-checkbox{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.grid-checkbox-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 160px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.grid-checkbox-item input{
+    margin:0;
+    padding: 0;
+    gap: 0;
+    width: 50px;
+}
+
+.checkbox-text{
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    width: 140px;
+}
+
+@media (max-width:1300px) {
+    .form-component {
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center; 
+    }
+    
+
+}
+
+@media (max-width:700px) {
+    .form-component {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .crud-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

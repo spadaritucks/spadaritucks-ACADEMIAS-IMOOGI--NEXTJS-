@@ -1,0 +1,159 @@
+.navbar-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90px;
+    padding: 0 10px;
+    background-color: rgb(52, 46, 46);
+    border-bottom: 8px solid orange;
+    
+}
+
+.nav-bar-logo{
+    margin: 15px;
+}
+
+.nav-itens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+
+}
+
+.nav-itens div{
+    margin: 5px;
+}
+
+
+.nav-link-routes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    
+}
+
+
+
+.nav-bar-link {
+    padding: 0 5px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 5px 5px;
+}
+
+.nav-bar-link:hover{
+    border-bottom: 2px solid orange  ;
+}
+
+.nav-link-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-link-icon:hover{
+    transform: scale(110%);
+}
+
+.nav-link-login a {
+    padding: 0 5px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.nav-btn-register {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: orange;
+}
+
+.nav-btn-register:hover {
+    cursor: pointer;
+    background-color: orangered
+}
+
+.nav-btn-register a {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+    
+}
+
+.btn-toogle {
+    display: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-toogle svg{
+    color: white;
+}
+
+.btn-toogle:hover{
+    transform: scale(110%);
+    transition: 0.3s ease-in-out;
+}
+
+
+
+
+
+@media (max-width: 990px) {
+
+    .btn-toogle {
+        display: block;
+        z-index: 2000;
+    }
+
+    .nav-link-routes {
+        flex-direction: column;
+        
+    }
+
+    .nav-itens {
+        width: 100%;
+        background-color: rgb(52, 46, 46);
+        border-bottom: 8px solid orange;
+        opacity: 0;
+        flex-direction: column;
+        transition: 0.3s ease-in;
+        position: absolute;
+        top: -180px;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    }
+
+    .nav-itens a {
+        padding: 12px 20px;
+        text-align: center;
+    }
+
+    .nav-itens.open {
+        opacity: 1;
+        height: auto;
+        transition: 0.3s ease-in;
+        top: 90px;
+      
+    }
+
+    .user-actions{
+        flex-direction: column;
+    }
+
+
+
+}

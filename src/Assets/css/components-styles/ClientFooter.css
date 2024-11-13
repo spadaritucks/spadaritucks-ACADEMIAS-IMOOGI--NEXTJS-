@@ -1,0 +1,110 @@
+.footer-bar {
+    width: 100%;
+    height: 40vh;
+    padding: 10px 50px;
+    background-color: rgb(52, 46, 46);
+    border-top: 8px solid orange;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 25%;
+    padding: 5px 15px;
+    border-right: 0.5px white solid;
+    height: 70%;
+    text-align: center;
+    
+}
+
+.footer-text{
+    width: 100%;
+}
+
+.footer-logo {
+    margin: 5px;
+
+}
+
+.logo-text{
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+
+.footer-card a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.social-plataform{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.social-plataform:hover{
+    transform: scale(110%);
+}
+
+.social-plataform p{
+    margin: 0 3px;
+}
+
+.links ul li{
+    margin: 15px;
+}
+
+
+.social{
+    justify-content: space-around;
+}
+
+.links h2, .social h2{
+    font-size: 30px;
+    color: white;
+}
+
+.links a:hover{
+    border-bottom: 2px solid orange  ;
+}
+
+.location{
+    text-align: center;
+    color: white;
+}
+
+.location a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width:990px) {
+    .footer-bar {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .footer-card{
+        border-right: 0;
+        border-bottom: 1px solid white;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}

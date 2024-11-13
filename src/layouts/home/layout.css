@@ -1,0 +1,10 @@
+
+.nav-link-login a {
+    padding: 0 5px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}

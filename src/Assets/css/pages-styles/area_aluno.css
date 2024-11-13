@@ -1,0 +1,269 @@
+h1 {
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+.menuAluno {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    margin-top: 40px;
+}
+
+.menuCarteira {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 4px 4px 4px 4px #ccc;
+    width: 400px;
+    text-align: center;
+    padding: 10px 10px;
+    margin: 30px;
+    height: 300px;
+    overflow-x: auto;
+}
+
+.pagamentos_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 4px 4px 4px 4px #ccc;
+    width: 400px;
+    text-align: center;
+    padding: 20px 10px;
+    margin: 30px;
+    height: 300px;
+    overflow-x: auto;
+}
+
+
+
+.dados h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.dados h3 {
+    font-size: 20px;
+}
+
+.dado {
+    box-shadow: 1px 1px 1px 1px #ccc;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.user-datas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.date {
+    margin: 10px;
+}
+
+
+.area-carteira {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(52, 46, 46);
+    border: 3px solid orange;
+    color: white;
+    width: 406.4px;
+    height: 254.8px;
+    padding: 20px 10px;
+
+}
+
+
+.dados-carteira {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.divDados {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 0;
+
+}
+
+.foto-usuario-area {
+    width: 150px;
+}
+
+.foto-usuario {
+    border-radius: 20px;
+    border: 4px solid orange;
+    width: 150px;
+    height: 150px;
+}
+
+.dados-usuario-area {
+    margin: 10px;
+    height: 160px;
+    width: 70%;
+    font-size: 11px;
+}
+
+.container-modalidades {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.nome-modalidade {
+    margin: 0;
+}
+
+.btn-pdf {
+    background-color: #007BFF;
+    font-size: 15px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    margin-top: 20px;
+}
+
+.btn-pdf:hover {
+    background-color: blue;
+}
+
+.reservasContainer {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.reserva-dados {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+   
+
+}
+
+.reserva {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 2px 2px #ccc;
+    padding: 5px 10px;
+    text-align: left;
+    width: 360px;
+    margin: 5px;
+}
+
+.reserva p {
+    margin: 2px;
+}
+
+
+
+.btn-delete-reserva {
+    padding: 0 5px;
+    background-color: #f21c1c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 3px;
+}
+
+.btn-delete-reserva:hover {
+    background-color: red;
+}
+
+.pagamentos-comprovantes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    width: 400px;
+
+
+}
+
+.container_pagamento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 1px 1px #ccc;
+    margin-top: 10px;
+    padding: 0 10px;
+
+}
+
+
+.dados_pagamento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 1px 1px #ccc;
+    margin-top: 10px;
+}
+
+.dado-pagamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+    text-align: center;
+
+}
+
+.modal_pagamentos_dados {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+@media (max-width:990px) {
+    .menuAluno {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal_pagamentos_dados {
+        flex-direction: column;
+    }
+}

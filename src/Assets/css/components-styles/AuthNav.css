@@ -1,0 +1,170 @@
+.btn-hamburguer {
+    display: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-hamburguer:hover {
+    transform: scale(110%);
+    transition: 0.3s ease-in-out;
+
+}
+
+.toogleClose {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.auth-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(52, 46, 46);
+    border-bottom: 8px solid rgb(255, 178, 34);
+}
+
+.authbar-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.session-name {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    transition: 0.3s ease-in;
+}
+
+.session-name:hover{
+    transform: scale(110%);
+    transition: 0.3s ease-in;
+}
+
+.logout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    cursor: pointer;
+
+}
+
+.logout:hover{
+    transform: scale(110%);
+    
+}
+
+
+.side-link-routes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.side-link-routes a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+
+.side-link-routes a:hover{
+    color: #ccc;
+}
+
+.side-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.users-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px;
+
+}
+
+.users-info p{
+    color: white;
+}
+
+.btn-hamburguer svg{
+    color: white;
+}
+
+.user-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-userDados, .btn-password{
+    padding: 0 5px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 3px;
+}
+
+.btn-userDados:hover, .btn-password:hover{
+    background-color: blue;
+}
+
+
+@media (max-width:1220px) {
+    .btn-hamburguer {
+        display: block;
+        z-index: 3000;
+        margin-left: 15px;
+    }
+
+
+
+    .authbar-style {
+        position: fixed;
+        top: -90px;
+        transition: 0.3s ease-in;
+        opacity: 0;
+        z-index: 0;
+        width: 100%;
+        max-height: 100%;
+        background-color: rgb(52, 46, 46);
+        border-bottom: 8px solid rgb(255, 178, 34);
+        padding: 20px;
+        z-index: -1;
+        flex-direction: column;
+
+    }
+    
+    .side-link-routes{
+        flex-direction: column;
+    }
+
+    .authbar-style.open {
+        top: 90px;
+        transition: 0.3s ease-in;
+        opacity: 1;
+        z-index: 2000;
+        
+
+    }
+
+}

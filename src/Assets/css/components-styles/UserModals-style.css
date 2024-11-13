@@ -1,0 +1,20 @@
+.modal-width{
+    width: 70vw;
+    min-width: 300px;
+    max-width: 90vw;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    z-index: 6000;
+}
+
+
+@media (max-width:990px) {
+    .modal-width{
+        width: 90vw;
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,64 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    padding: 0 30px;
+}
+
+.menu h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.descricaoEmpresa{
+    max-width: 800px;
+    max-height: 500px;
+    box-shadow: 4px 4px 4px 4px #ccc;
+    margin-top: 20px;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.atendimento-gympass{
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    background-color: orange;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.atendimento-gympass:hover{
+    background-color: orangered;
+}
+
+.atendimento-gympass a{
+    text-decoration: none;
+    color: black;
+}
+
+.atendimento-totalpass{
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    background-color: rgb(102, 207, 124);
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.atendimento-totalpass:hover{
+    background-color: rgb(22, 112, 22);
+}
+
+.atendimento-totalpass a{
+    text-decoration: none;
+    color: black;
+}
